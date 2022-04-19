@@ -64,6 +64,12 @@
     <Compile Include="Customers\Frm_Customers.Designer.cs">
       <DependentUpon>Frm_Customers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNewAccounting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewAccounting.Designer.cs">
+      <DependentUpon>frmNewAccounting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Add_Or_Edit_Customers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customers\Frm_Customers.resx">
       <DependentUpon>Frm_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewAccounting.resx">
+      <DependentUpon>frmNewAccounting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Add_Or_Edit_Customers.resx">
       <DependentUpon>Frm_Add_Or_Edit_Customers.cs</DependentUpon>
@@ -196,6 +205,10 @@
     <ProjectReference Include="..\Accounting.Utility\Accounting.Utility.csproj">
       <Project>{533f7cca-a4cd-4dab-a0bf-6edd1426a7d3}</Project>
       <Name>Accounting.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Accounting.ViewModels\Accounting.ViewModels.csproj">
+      <Project>{8c3cfad0-58ed-4b50-99bb-5d12b513aee7}</Project>
+      <Name>Accounting.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

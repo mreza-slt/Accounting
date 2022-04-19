@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Accounting.ViewModels.Customers;
 
 namespace Accounting.DataLayer.Repositorys
 {
@@ -11,6 +12,8 @@ namespace Accounting.DataLayer.Repositorys
         List<Customers> GetAllCustomers();
 
         IEnumerable<Customers> GetCustomersByFilter(string parameter);
+
+        List<ListCustomerViewModel> GetNameCustomers(string filter = "");
 
         Customers GetCustomerById(int customerId);
 
@@ -21,6 +24,8 @@ namespace Accounting.DataLayer.Repositorys
         bool DeleteCustomer(Customers customer);
 
         bool DeleteCustomer(int customerId);
+
+        int GetCustomerByIdName(string name);
 
     }
 }
