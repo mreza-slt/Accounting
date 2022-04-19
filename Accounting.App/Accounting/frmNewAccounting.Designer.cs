@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNewAccounting));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtFilter = new System.Windows.Forms.TextBox();
             this.dgvCustomers = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtFilter = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,15 +62,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اشخاص";
             // 
-            // txtFilter
-            // 
-            this.txtFilter.Location = new System.Drawing.Point(6, 22);
-            this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(181, 23);
-            this.txtFilter.TabIndex = 0;
-            this.txtFilter.Text = "م";
-            this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
-            // 
             // dgvCustomers
             // 
             this.dgvCustomers.AllowUserToAddRows = false;
@@ -95,6 +86,14 @@
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            // 
+            // txtFilter
+            // 
+            this.txtFilter.Location = new System.Drawing.Point(6, 22);
+            this.txtFilter.Name = "txtFilter";
+            this.txtFilter.Size = new System.Drawing.Size(181, 23);
+            this.txtFilter.TabIndex = 0;
+            this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             // 
             // label1
             // 

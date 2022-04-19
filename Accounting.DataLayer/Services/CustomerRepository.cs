@@ -45,9 +45,6 @@ namespace Accounting.DataLayer.Services
 
         public bool UpdateCustomer(Customers customer)
         {
-            //    try
-            //    {
-
             var local = db.Set<Customers>()
                          .Local
                          .FirstOrDefault(f => f.CustomerId == customer.CustomerId);
@@ -58,11 +55,6 @@ namespace Accounting.DataLayer.Services
 
             db.Entry(customer).State = EntityState.Modified;
             return true;
-            //}
-            //catch (Exception)
-            //{
-            //    return false;
-            //}
         }
 
         public bool DeleteCustomer(Customers customer)
@@ -119,5 +111,12 @@ namespace Accounting.DataLayer.Services
         {
             return db.Customers.First(c => c.FullName == name).CustomerId;
         }
+
+        public string GetCustomerNameById(int customerId)
+        {
+            return db.Customers.Find(customerId).FullName;
+        }
+
+
     }
 }
