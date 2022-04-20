@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnEditLogin = new System.Windows.Forms.ToolStripDropDownButton();
+            this.تنظیماتورودToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.btnCustomers = new System.Windows.Forms.ToolStripButton();
             this.btnNewAccounting = new System.Windows.Forms.ToolStripButton();
@@ -42,7 +43,6 @@
             this.lblDate = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.تنظیماتورودToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,6 +70,13 @@
             this.btnEditLogin.Name = "btnEditLogin";
             this.btnEditLogin.Size = new System.Drawing.Size(78, 24);
             this.btnEditLogin.Text = "تنظیمات";
+            // 
+            // تنظیماتورودToolStripMenuItem
+            // 
+            this.تنظیماتورودToolStripMenuItem.Name = "تنظیماتورودToolStripMenuItem";
+            this.تنظیماتورودToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.تنظیماتورودToolStripMenuItem.Text = "تنظیمات ورود";
+            this.تنظیماتورودToolStripMenuItem.Click += new System.EventHandler(this.تنظیماتورودToolStripMenuItem_Click);
             // 
             // toolStrip2
             // 
@@ -169,13 +176,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // تنظیماتورودToolStripMenuItem
-            // 
-            this.تنظیماتورودToolStripMenuItem.Name = "تنظیماتورودToolStripMenuItem";
-            this.تنظیماتورودToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.تنظیماتورودToolStripMenuItem.Text = "تنظیمات ورود";
-            this.تنظیماتورودToolStripMenuItem.Click += new System.EventHandler(this.تنظیماتورودToolStripMenuItem_Click);
             // 
             // Form1
             // 
