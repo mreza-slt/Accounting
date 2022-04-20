@@ -48,14 +48,31 @@ namespace Accounting.App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblDate.Text = DateConvertor.ToShamsi(DateTime.Now);
-            lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
 
+            this.Hide();
+            frmLogin frmLogin = new frmLogin();
+            if (frmLogin.ShowDialog() == DialogResult.OK)
+            {
+                this.Show();
+                lblDate.Text = DateConvertor.ToShamsi(DateTime.Now);
+                lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void تنظیماتورودToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.IsEdit = true;
+            frmLogin.ShowDialog();
         }
     }
 }
